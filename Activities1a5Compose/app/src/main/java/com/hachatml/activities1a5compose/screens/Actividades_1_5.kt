@@ -197,7 +197,9 @@ A nivel funcional no permitas que se introduzcan caracteres que invaliden un nú
 @Composable
 fun Actividad5() {
     var myVal by rememberSaveable { mutableStateOf("") }
-
+    //val focusManager = LocalFocusManager.current
+    //a medio hacer, no tuve más tiempo, pero por lo que he estado investigando, el tema del focus
+    //lo haría con esta variable de arriba y usando un modifier en el OutlinedTextField.
     Column(
         Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
